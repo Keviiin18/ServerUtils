@@ -1,6 +1,7 @@
 package de.kevin;
 
 import de.kevin.commands.Gamemode;
+import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public final class ServerUtils extends JavaPlugin {
@@ -16,6 +17,8 @@ public final class ServerUtils extends JavaPlugin {
         PLUGIN_PREFIX = "§7[§eUtils§7] ";
 
         getCommand("gamemode").setExecutor(new Gamemode());
+
+        Bukkit.getConsoleSender().sendMessage("Plugin aktiv!");
 
     }
 
