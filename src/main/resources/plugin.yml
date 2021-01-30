@@ -1,0 +1,8 @@
+name: ServerUtils
+version: ${project.version}
+main: de.kevin.ServerUtils
+api-version: 1.16
+authors: [ Kevin ]
+commands:
+  gamemode:
+    aliases: gm
